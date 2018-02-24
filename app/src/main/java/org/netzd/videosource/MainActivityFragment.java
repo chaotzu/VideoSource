@@ -67,17 +67,17 @@ public class MainActivityFragment extends Fragment implements SurfaceHolder.Call
             mediaPlayer.setOnPreparedListener(this);
             mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
         }catch (Exception e){
-            Log.e("[Error]", e.getMessage());
+            //Log.e("[Error]", e.getMessage());
         }
     }
 
     @Override
     public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
-
+        return;
     }
 
     @Override
     public void surfaceDestroyed(SurfaceHolder holder) {
-
+        return;
     }
 }
